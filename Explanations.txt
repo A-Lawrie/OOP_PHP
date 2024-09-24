@@ -1,0 +1,41 @@
+The code below is for creating, setting and getting an object using the normal way.
+The code is long and involves multiple steps
+
+$stefan = new person();
+$jimmy = new person();
+
+$stefan->set_name("Stefan Mischook");
+$jimmy->set_name("Nick Waddles");
+
+echo "Stefan's full name is ". $stefan->get_name(). "<br/>";
+echo "Nicks's full name is ". $jimmy->get_name(). "<br/>";
+
+Note: directly accessing properties in a class is a no-no.
+echo "Stefan's full name: " . $stefan->name;
+
+
+
+The code below is for the above process but using constructors. The code is shorter and therfore there is less code to debug.
+ creating an object with constructors
+ $stefan = new person("Stefan Mischook");
+  
+ showed from using constructor
+ echo "Stefan's full name: " . $stefan->get_name();
+
+
+ You restrict access to class properties using something called 'access modifiers'. This is in order to achieve encapsulation
+There are 3 access modifiers:
+• public
+• private
+• protected
+Public is the default modifier. 
+Note: When you declare a property with the 'var' keyword, it is considered 'public'. 
+
+When you declare a property as 'private', only the same class can access the
+property.
+When a property is declared 'protected', only the same class and classes derived
+from that class can access the property - this has to do with inheritance …more on
+that later.
+Properties declared as 'public' have no access restrictions, meaning anyone can
+access them. 
+        

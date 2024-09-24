@@ -1,6 +1,10 @@
 <?php
     class person{
+        //These are the different access modifiers
         var $name;
+        public $height;
+        protected $social_insurance;
+        private $pinn_number;
 
         //Creating a constructor
         function __construct($person_name){
