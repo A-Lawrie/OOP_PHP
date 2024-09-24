@@ -8,17 +8,22 @@
 </head>
 <body>
     <?php
-        $stefan = new person();
-        $jimmy = new person();
+        //$stefan = new person();
+        //$jimmy = new person();
+        // creating an object with constructors
+        $stefan = new person("Stefan Mischook");
 
         $stefan->set_name("Stefan Mischook");
-        $jimmy->set_name("Nick Waddles");
+        //$jimmy->set_name("Nick Waddles");
 
         // directly accessing properties in a class is a no-no.
         //echo "Stefan's full name: " . $stefan->name;
+
+        //echo "Stefan's full name is ". $stefan->get_name(). "<br/>";
+        //echo "Nicks's full name is ". $jimmy->get_name(). "<br/>";
         
-        echo "Stefan's full name is ". $stefan->get_name(). "<br/>";
-        echo "Nicks's full name is ". $jimmy->get_name(). "<br/>";
+        //showed from using constructor
+        echo "Stefan's full name: " . $stefan->get_name();
     ?>
     
 </body>
