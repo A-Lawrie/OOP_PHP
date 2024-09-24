@@ -14,6 +14,9 @@
         $stefan->set_name("Stefan Mischook");
         $jimmy->set_name("Nick Waddles");
 
+        // directly accessing properties in a class is a no-no.
+        //echo "Stefan's full name: " . $stefan->name;
+        
         echo "Stefan's full name is ". $stefan->get_name(). "<br/>";
         echo "Nicks's full name is ". $jimmy->get_name(). "<br/>";
     ?>
